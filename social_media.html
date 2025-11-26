@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Like - Multimedia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Multimedia</h1>
+    <nav class="nav">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="social_media.html">Multimedia</a></li>
+            <li><a href="social_comentario.html">Comentarios</a></li>
+            <li><a href="social_noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contenedor">
+
+    <!-- VIDEO -->
+    <div class="card">
+        <h3>Video</h3>
+        <video controls width="100%">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+        </video>
+        <button class="like-btn" onclick="darLike('like_video')">❤️</button>
+        <span id="like_video" class="contador">0</span>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="card">
+        <h3>Imagen</h3>
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" width="100%">
+        <button class="like-btn" onclick="darLike('like_imagen')">❤️</button>
+        <span id="like_imagen" class="contador">0</span>
+    </div>
+
+    <!-- AUDIO -->
+    <div class="card">
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav">
+        </audio>
+        <button class="like-btn" onclick="darLike('like_audio')">❤️</button>
+        <span id="like_audio" class="contador">0</span>
+    </div>
+
+</section>
+
+</body>
+</html>
