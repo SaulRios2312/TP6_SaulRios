@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Like - Noticias</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Noticias</h1>
+    <nav class="nav">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="social_media.html">Multimedia</a></li>
+            <li><a href="social_comentario.html">Comentarios</a></li>
+            <li><a href="social_noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contenedor">
+
+    <div class="card">
+        <h3>Noticia 1</h3>
+        <p>Un nuevo avance tecnológico promete revolucionar el transporte urbano.</p>
+        <button class="like-btn" onclick="darLike('like_new1')">❤️</button>
+        <span id="like_new1" class="contador">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Noticia 2</h3>
+        <p>El clima global alcanzó temperaturas récord este último año.</p>
+        <button class="like-btn" onclick="darLike('like_new2')">❤️</button>
+        <span id="like_new2" class="contador">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Noticia 3</h3>
+        <p>Nuevas investigaciones descubren posibles planetas habitables.</p>
+        <button class="like-btn" onclick="darLike('like_new3')">❤️</button>
+        <span id="like_new3" class="contador">0</span>
+    </div>
+
+</section>
+
+</body>
+</html>
