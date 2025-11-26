@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Like - Comentarios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Comentarios</h1>
+    <nav class="nav">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="social_media.html">Multimedia</a></li>
+            <li><a href="social_comentario.html">Comentarios</a></li>
+            <li><a href="social_noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contenedor">
+
+    <div class="card">
+        <h3>Opinión sobre tecnología</h3>
+        <p>Creo que la IA va a cambiar el mundo más rápido de lo que esperamos.</p>
+        <button class="like-btn" onclick="darLike('like_com1')">❤️</button>
+        <span id="like_com1" class="contador">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Anime del momento</h3>
+        <p>Solo Leveling está demasiado bueno, las animaciones están de otro nivel.</p>
+        <button class="like-btn" onclick="darLike('like_com2')">❤️</button>
+        <span id="like_com2" class="contador">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Opinión random</h3>
+        <p>El tereré siempre va a ser superior al mate. No se discute.</p>
+        <button class="like-btn" onclick="darLike('like_com3')">❤️</button>
+        <span id="like_com3" class="contador">0</span>
+    </div>
+
+</section>
+
+</body>
+</html>
